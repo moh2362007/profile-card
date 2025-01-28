@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@1,200..1000&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jomhuria&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans';
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    position: relative;
+    overflow: hidden;
+}
+.container > .top {
+    position: absolute;
+    top: -58%;
+    left: -24%;
+    max-width: 100%;
+    opacity: 0.3;
+}
+.container > .bottom {
+    position: absolute;
+    bottom: -69%;
+    right: -23%;
+    max-width: 100%;
+    opacity: 0.3;
+}
+.container .card {
+    width: 500px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+}
+@media (max-width: 520px) {
+    .container .card {
+        margin: 0 20px;
+    }
+}
+.container .card .profile > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+
+}
+.container .card .profile {
+    position: relative;
+}
+.container .card .profile .image {
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50% , 0);
+}
+.container .card .image img {
+    border-radius: 50%;
+}
+.container .card h2 {
+    margin: 70px 0 10px;
+    text-align: center;
+}
+.container .card h2 span {
+    font-weight: 500;
+    color: #a09696;
+}
+.container .card > span {
+    text-align: center;
+    font-weight: 500;
+    color: #a09696;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.container .card .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    margin-top: 90px;
+    border-top: 1px solid #8d848483;
+} .container .card .info > div {
+    padding: 15px 5px;
+    line-height: 1.5;
+}
+.container .card .info span {
+    font-weight: 500;
+    color: #a09696;
+    letter-spacing: 1.5px;
+}
+@media (max-width: 380px) {
+    .container .card .info {
+        flex-direction: column;
+    }
+}
